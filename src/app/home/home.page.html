@@ -1,0 +1,28 @@
+
+<ion-content class="background-content" >
+
+<div class="pokemon">
+  <ion-card class="imagen" *ngIf="pokemonByQuery">
+    <ion-card-content>
+      <img [src]="pokemonByQuery.imageUrl" [alt]="pokemonByQuery.name" width="250">
+      <ion-card-header class="info">
+        {{ pokemonByQuery.name }}
+      </ion-card-header>
+      <ion-card-header class="info">
+        ID: {{ pokemonByQuery.id }}
+      </ion-card-header>
+      <ion-card-header class="info" *ngFor="let type of pokemonByQuery.types">
+        Tipo: {{ type }}
+      </ion-card-header>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="poke">
+    <ion-item>
+      <ion-label class="Buscar" position="floating">Buscar por ID o Nombre </ion-label>
+      <ion-input class="Buscar" type="text" [(ngModel)]="pokemonQuery"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-button expand="block" (click)="getPokemonDataByQuery()">Seleccionar</ion-button>
+</div>
+</ion-content>
+

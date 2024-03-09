@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Chin';
+  src: url('../../assets/font/retro_computer_personal_use.ttf') format('truetype');
+}
+ion-content {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+}
+ion-content.background-content {
+  --background: url('https://i.pinimg.com/550x/1b/2f/78/1b2f788645df14595c8d4b6cda6fc58a.jpg') repeat;
+}
+.Buscar{
+  font-family:Chin;
+}
+.info{
+  font-family:Chin;
+}
+ion-button{
+  --background: #ff0000;
+  font-family:Chin;
+  font-size: 20px;
+  color: #ffffff;
+}
+ion-toolbar{
+  font-family:Chin;
+  --background: #55b9c0;
+  --color: #5cfff7;
+  text-align: center;
+}
+ion-card.poke {
+  background-color: rgba(243, 159, 211, 0.7); /* 70% de opacidad */
+}
+ion-item{
+  --background: #ff0000;
+  --color: #e4da80;
+  text-align: center;
+}
+ion-card.imagen {
+  background-color: rgba(201, 235, 255, 0.596); /* 70% de opacidad */
+  text-align: center;
+
+}
+.info{
+  font-size: 30px;
+  color: #c21c99;
+}
